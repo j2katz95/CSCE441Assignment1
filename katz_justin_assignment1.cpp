@@ -4,52 +4,40 @@
 void init(void){
 	glClearColor(0.0,0.0,0.0,0.0);
 	glMatrixMode(GL_PROJECTION);
-	gluOrtho2D(0.0,200.0,0.0,150.0);
+	gluOrtho2D(0.0,600.0,0.0,300.0);
 }
-
-/*
-void lineSegment(void){
-	glClear(GL_COLOR_BUFFER_BIT);
-	glColor3f(0.0,0.4,0.2);
-	glBegin(GL_LINES);
-		glVertex2i(180,15);
-		glVertex2i(145,10);
-	glEnd();
-	glFlush();
-}
-*/
 
 void hexagon(void){
 	glClear(GL_COLOR_BUFFER_BIT);
 	glColor3f(0.0,0.4,0.2);
 	glBegin(GL_LINES);
-		glVertex2i(70,15);
-		glVertex2i(130,15);
+		glVertex2i(270,100);
+		glVertex2i(330,100);
 	glEnd();
 	glColor3f(1.0,1.0,1.0);
 	glBegin(GL_LINES);
-		glVertex2i(130,15);
-		glVertex2i(160,66.961524227066);
+		glVertex2i(330,100);
+		glVertex2i(360,151.961524227066);
 	glEnd();
-	glColor3f(102.0,0.0,102.0);
+	glColor3f(0.6,0.0,0.6);
 	glBegin(GL_LINES);
-		glVertex2i(160,66.961524227066);
-		glVertex2i(130,118.92304845);
+		glVertex2i(360,151.961524227066);
+		glVertex2i(330,203.92304845);
 	glEnd();
-	glColor3f(255.0,128.0,0.0);
+	glColor3f(255.0,255.0,0.0);
 	glBegin(GL_LINES);
-		glVertex2i(130,118.92304845);
-		glVertex2i(70,118.92304845);
+		glVertex2i(330,203.92304845);
+		glVertex2i(270,203.92304845);
 	glEnd();
-	glColor3f(255.0,15.0,51.0);
+	glColor3f(1.0,0.5,0.0);
 	glBegin(GL_LINES);
-		glVertex2i(70,118.92304845);
-		glVertex2i(40.0,66.961524227066);
+		glVertex2i(270,203.92304845);
+		glVertex2i(240.0,151.961524227066);
 	glEnd();
-	glColor3f(102.0,51.0,0.0);
+	glColor3f(0.4,0.2,0.0);
 	glBegin(GL_LINES);
-		glVertex2i(40.0,66.961524227066);
-		glVertex2i(70,15);
+		glVertex2i(240.0,151.961524227066);
+		glVertex2i(270,100);
 	glEnd();
 	glFlush();
 }
